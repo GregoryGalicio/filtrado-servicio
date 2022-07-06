@@ -5,40 +5,34 @@
 const serviceData = [
   {
     name: "Electricidad",
-    description:
-      "Problemas con la electricidad de su hogar, nosotros somos la solucion a un click de su servicio",
+    description:"Problemas con la electricidad de su hogar, nosotros somos la solucion a un click de su servicio",
     type: "Hogar"
   },
   {
     name: "Auxilio Mecanico",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     type: "Autos"
   },
   {
     name: "Chofer reemplazo",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     type: "Autos"
   },
  
   {
     name: "Medico a domicilio",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     type: "Salud"
   },
  
   {
     name: "Ambulancia",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     type: "Salud"
   },
   {
     name: "Gasfitero",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     type: "Hogar"
   },
  

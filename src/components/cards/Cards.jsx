@@ -16,11 +16,10 @@ const Cards = ({darkMode}) => {
                     <div className='information'>
                         <h1 className='name'>{serviceData.name}</h1>
                         <h2>{serviceData.description}</h2>
-                        <div className='btn'>
+                    </div>
+                    <div className='btn'>
                         <button>Editar</button>
                         <button>Eliminar</button>
-                        </div>
-                        
                     </div>
                 </div>     
             ))}
