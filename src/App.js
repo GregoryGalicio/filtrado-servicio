@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-//import logo from './logo.svg';
 import './App.css';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import Cards  from './components/cards/Cards';
+
+
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Header darkMode={darkMode} onClick={handleClick}/>
+      <Cards  darkMode={darkMode}/>
       <Footer darkMode={darkMode}/>
     </div>
   );
