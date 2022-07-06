@@ -1,0 +1,60 @@
+
+.Header{
+    padding-bottom: 10px;
+    color: #6809E1;
+    border-top: 7px solid #6809e1;
+    font-size: 30px;
+   }
+  
+  .darkHeader{
+   background-color: #373737;
+   color: white;
+   padding-bottom: 10px;
+   border-top: 7px solid #6809e1;
+   font-size: 30px;
+  }
+  
+  .dark{
+    width: 148px;
+    height: 43px;
+    background: none;
+    border-radius: 61px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    margin:20px;
+  
+  }
+  
+  .dark:hover {
+    background-image: linear-gradient(midnightblue, rebeccapurple);
+      border: none;
+      cursor: pointer;
+  }
+  .light{
+      width: 148px;
+      height: 43px;
+      background: none;
+      border-radius: 61px;
+      border: 1px solid #6809E1;
+      color: #6809E1;
+      font-weight: bold;
+      margin:20px;
+  }
+  .light:hover {
+      background-image: linear-gradient(rgb(80, 227, 194), rgb(48, 167, 214));
+      border: none;
+      cursor: pointer;
+  }
+  
+  /* Aca se empieza a colocar los estilos para version MOBILE */
+  @media only screen and (max-width: 500px) {
+    .Header{
+      font-size: 20px;
+     }
+     .darkHeader{
+      font-size: 20px;
+     }
+  
+  
+    }

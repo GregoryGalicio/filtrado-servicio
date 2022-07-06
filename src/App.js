@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import Footer from './componets/footer/Footer'
+import Footer from './componets/footer/Footer';
+import Header from './componets/header/Header';
+
 
 function App() {
   const[darkMode,setDarkMode]=useState(false);
@@ -11,9 +13,7 @@ function App() {
     }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <Header darkMode={darkMode} onClick={handleClick}/>
       <Footer darkMode={darkMode}/>
     </div>
   );
