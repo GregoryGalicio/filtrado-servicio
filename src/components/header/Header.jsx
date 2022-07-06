@@ -7,7 +7,7 @@ const Header = ({onClick, darkMode}) => {
    
     return (
         <div className={`${darkMode?"darkHeader":"Header"}`}>
-            <h1>SERVICIOS<br/> with ReactHooks</h1>
+            <h1>SERVICIOS</h1>
             <button className={`${darkMode? 'dark':'light'}`} type="button" onClick={onClick}>{darkMode? 'Light Mode':'Dark Mode'}</button>
             <Toggle darkMode={darkMode} onClick={onClick} />
         </div>

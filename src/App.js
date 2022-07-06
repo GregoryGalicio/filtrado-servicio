@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './App.css';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Body from './components/body/Body';
+// import Body from './components/body/Body';
+import CrudApp from './components/crudApp/CrudApp';
 
 
 
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header darkMode={darkMode} onClick={handleClick}/>
-      <Body darkMode={darkMode}/>
+      <CrudApp darkMode={darkMode}/>
       <Footer darkMode={darkMode}/>
     </div>
   );

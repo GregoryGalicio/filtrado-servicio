@@ -90,23 +90,26 @@
 /* Aca se empieza a colocar los estilos para version MOBILE */
 @media only screen and (max-width: 500px) {
 .cards{
-    clip-path: polygon(0 0.5%, 100% 0, 100% 99.5%, 0% 100%); 
+    width: 70%; 
 }
 .cardsDark{
-    clip-path: polygon(0 0.5%, 100% 0, 100% 99.5%, 0% 100%); 
+
+    width: 70%; 
+
 }
 .cardsBox{
-    width: 50%;
+    width: 90%;
     height: 180px;
     border-radius: 10px;
 }
 .cardsBoxDark{
-    width: 50%;
+    width: 90%;
     height: 180px;
     border-radius: 10px;
 }
 
 .information{
+    
     line-height: 15px;
     font-size: 7.5px;
     padding-right:10px;

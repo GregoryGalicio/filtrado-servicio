@@ -1,0 +1,21 @@
+.form{
+    
+    padding-top: 5%;
+    padding-bottom: 7.5%; 
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items:center ; */
+    flex-direction:column;
+    border: 2px solid grey;
+    width: 400px;
+    height: 350px;
+    border-radius: 5px;
+    margin-left: 15px;   
+    background-image: linear-gradient(225deg, #525153  0%, #ffffff 100%);
+}
+
+@media only screen and (max-width: 500px) {
+    .form{
+        width: 80%;
+    }
+}
