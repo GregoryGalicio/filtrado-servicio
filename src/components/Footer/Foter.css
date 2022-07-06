@@ -1,0 +1,52 @@
+.main-footer {
+    color: #6809e1;
+    background-color:white;
+    /* padding-top: 1em; */
+    position: relative;
+    width: 100%;
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
+    background-image: linear-gradient(0deg, #ffffff 0%, #6809e1 100%);
+    padding-top: 5%; 
+    margin-top: -7.5%;
+   
+    
+  }
+  .main-footerDark {
+    color: white;
+    background-color:black;
+    padding-top: 1em;
+    position: relative;
+    
+    width: 100%;
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
+    background-image: linear-gradient(0deg, #000000 0%, #3b0b7b 100%);
+    padding-top: 5%; 
+    margin-top: -7.5%;
+  }
+  .line{
+    color: #6809e1;
+   
+  }
+  .foot{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid white;
+  }
+  .footDark{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid #6809e1;
+  }
+
+/* Aca se empieza a colocar los estilos para version MOBILE */
+@media only screen and (max-width: 500px) {
+  .main-footer {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+    font-size: 10px;
+  }
+  .main-footerDark {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+    font-size: 10px;
+  }
+
+  }

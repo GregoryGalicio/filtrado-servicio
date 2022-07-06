@@ -1,7 +1,14 @@
+import React, { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
+import Footer from './componets/Footer/Footer'
 
 function App() {
+  const[darkMode,setDarkMode]=useState(false);
+  
+  const handleClick = () => {
+        setDarkMode(!darkMode);
+    }
   return (
     <div className="App">
       <header className="App-header">
@@ -15,8 +22,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React Gregory
         </a>
+        <Footer darkMode={darkMode}/>
       </header>
     </div>
   );
