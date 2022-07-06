@@ -23,12 +23,13 @@ const CrudApp = ({darkMode, data}) => {
   const [dataToEdit, setDataToEdit] = useState(null);
 
     // useEffect(() => {
-    //      setCards(serviceData);
+    //      setDb(serviceData);
     // }, [])
 
 const createData = (data) => {
-    data.id= Date.now();
-    // console.log("QUe paooooosoo")
+    data.id= data.id+1;
+    console.log(data)
+    console.log(db)
     setDb([...db,data]);
 };
 
@@ -44,7 +45,7 @@ const deleteData = (id) => {};
         setDataToEdit={setDataToEdit}
         deleteData={deleteData}
         data={db}
-        key={db.id}
+        // key={db.id}
         />
         <div>
         <CrudForm 

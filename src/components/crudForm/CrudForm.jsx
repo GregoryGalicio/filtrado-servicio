@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-//import { serviceData } from '../../serviceDataBase';
+import React, { useState } from 'react';
+import { serviceData } from '../../serviceDataBase';
 import "./CrudForm.css";
 
 const initialForm={
@@ -10,19 +10,23 @@ const initialForm={
 };
 
 
-const CrudForm = (createData, updateData, dataToEdit, setDataToEdit) => {
+const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit}) => {
     const [form, setForm] = useState(initialForm);
 
 //     useEffect(() => {
 //         setForm(serviceData);
 //    }, [])
 
-
+    // createData()
     const handleChange = (e) => {
+        
+        
         setForm({
             ...form,
             [e.target.name]:e.target.value,
+           
         });
+        console.log( e.target.value)
     };
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -33,8 +37,11 @@ const CrudForm = (createData, updateData, dataToEdit, setDataToEdit) => {
         }
         if(form.id===null){
             createData(form)
-        }else{
-            updateData(form);
+            console.log(createData(form))
+        }
+        else{
+            updateData(form)
+            // console.log;
         }
         handleReset();
     };
