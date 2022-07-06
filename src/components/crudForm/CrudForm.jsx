@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { serviceData } from '../../serviceDataBase';
+import React, { useState, useEffect } from 'react';
+//import { serviceData } from '../../serviceDataBase';
 import "./CrudForm.css";
 
 const initialForm={
@@ -12,6 +12,15 @@ const initialForm={
 
 const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit}) => {
     const [form, setForm] = useState(initialForm);
+    useEffect(() => {
+
+       if (dataToEdit) {
+            setForm(dataToEdit);
+        }else{
+            setForm(initialForm);
+        }
+        ;
+    }, [dataToEdit]);
 
 //     useEffect(() => {
 //         setForm(serviceData);
@@ -36,12 +45,10 @@ const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit}) => {
             return;
         }
         if(form.id===null){
-            createData(form)
-            console.log(createData(form))
+            createData(form)   
         }
         else{
-            updateData(form)
-            // console.log;
+            updateData(form)   
         }
         handleReset();
     };
@@ -55,7 +62,7 @@ const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit}) => {
 
   return (
     <div className='form'>
-        <h2>Servicio</h2>
+        <h2>{dataToEdit?"Editar Servicio":"Agregar Servicio"}</h2>
         <form onSubmit={handleSubmit}>
             <h3>Nombre</h3>
             <input 

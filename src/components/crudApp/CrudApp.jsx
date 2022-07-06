@@ -27,15 +27,28 @@ const CrudApp = ({darkMode, data}) => {
     // }, [])
 
 const createData = (data) => {
-    data.id= data.id+1;
+    data.id= Date.now();
     console.log(data)
     console.log(db)
     setDb([...db,data]);
 };
 
-const updateData = (data) => {};
+const updateData = (data) => {
+  let newData=db.map(el=>el.id===data.id? data:el);
+  setDb(newData);
+  //nueva base de datos que toma los datos ingresados en el update
+};
 
-const deleteData = (id) => {};
+const deleteData = (id) => {
+  let isDelete = window.confirm(`Estas seguro de eliminar este servicio con registro de id ${id}?`);
+  if(isDelete){
+    let newData1=db.filter(el => el.id !==id)
+    setDb(newData1);
+
+  }else{
+
+  }
+};
 
 
   return (
@@ -45,6 +58,7 @@ const deleteData = (id) => {};
         setDataToEdit={setDataToEdit}
         deleteData={deleteData}
         data={db}
+        // id={db.id}
         // key={db.id}
         />
         <div>
