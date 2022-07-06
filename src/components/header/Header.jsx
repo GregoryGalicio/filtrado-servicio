@@ -1,7 +1,7 @@
 import React from 'react';
 // import ThemeContext from '../context/ThemeContext';
 import "./Header.css";
-import Toggle from './Toggle.jsx'
+import Toggle from "../toggle/Toggle.jsx";
 
 const Header = ({onClick, darkMode}) => {
    
