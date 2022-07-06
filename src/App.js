@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './App.css';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Cards  from './components/cards/Cards';
+import Body from './components/body/Body';
 
 
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Header darkMode={darkMode} onClick={handleClick}/>
-      <Cards  darkMode={darkMode}/>
+      <Body darkMode={darkMode}/>
       <Footer darkMode={darkMode}/>
     </div>
   );
