@@ -80,8 +80,8 @@ const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit}) => {
             onChange={handleChange} 
             value={form.description}/>
             <br/>
-            <input type="submit" value="Enviar"/>
-            <input type="reset" value="Cancelar" onClick={handleReset}/>
+            <input className="grabar" type="submit" value="Grabar"/>
+            <input className="cancelar" type="reset" value="Cancelar" onClick={handleReset}/>
         </form>
     </div>
   );

@@ -1,15 +1,6 @@
-import React, { useState,useEffect } from 'react';
-//import { serviceData } from '../../serviceDataBase';
 import "./Cards.css";
 
 const Cards = ({darkMode, data, setDataToEdit,deleteData}) => {
-    // let{id}=el;
-    // const [cards, setCards]= useState([]);
-    
-    // useEffect(() => {
-    //      setCards(serviceData);
-    // }, [])
-
     return (
         <div className={darkMode?'cardsDark':"cards" }>
             {data.map(data =>(

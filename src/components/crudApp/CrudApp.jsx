@@ -3,25 +3,20 @@ import Cards from '../cards/Cards';
 import CrudForm from '../crudForm/CrudForm'
 import "./CrudApp.css";
 import { serviceData } from '../../serviceDataBase'
+import { filterByType } from '../../FilterFunction';
 
-//  const initialDb= [
-//   {
-//     id:1,
-//     name: "Electricidad",
-//     description:"Problemas con la electricidad de su hogar, nosotros somos la solucion a un click de su servicio",
-//     type: "Hogar"
-//   },
-//   {
-//     id:2,
-//     name: "Auxilio Mecanico",
-//     description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-//     type: "Autos"
-//   },]
 
-const CrudApp = ({darkMode, data}) => {
-  const [db, setDb]= useState(serviceData);
+const CrudApp = ({darkMode, type, setType,data}) => {
+  
+  let filterServiceData=serviceData;
+  filterServiceData=filterByType(type,filterServiceData)
+
+  const [db, setDb]= useState(filterServiceData);
   const [dataToEdit, setDataToEdit] = useState(null);
+  // const [type,setType]= useState()
 
+
+ 
     // useEffect(() => {
     //      setDb(serviceData);
     // }, [])
@@ -52,7 +47,7 @@ const deleteData = (id) => {
 
 
   return (
-    <div className='body'>
+    <div className={darkMode?'darkBody':'body' }>
         <Cards 
         darkMode={darkMode}
         setDataToEdit={setDataToEdit}
