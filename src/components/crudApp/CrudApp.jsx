@@ -61,7 +61,8 @@ const deleteData = (id) => {
         createData={createData} 
         updateData={updateData} 
         dataToEdit={dataToEdit}
-        setDataToEdit={setDataToEdit}/>
+        setDataToEdit={setDataToEdit}
+        darkMode={darkMode}/>
         </div>
         
         </div>

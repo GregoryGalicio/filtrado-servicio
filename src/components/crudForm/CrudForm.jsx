@@ -10,7 +10,7 @@ const initialForm={
 };
 
 
-const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit}) => {
+const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit, darkMode}) => {
     const [form, setForm] = useState(initialForm);
     useEffect(() => {
 
@@ -61,7 +61,7 @@ const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit}) => {
 
 
   return (
-    <div className='form'>
+    <div  className={darkMode?'darkForm':"form" }>
         <h2>{dataToEdit?"Editar Servicio":"Agregar Servicio"}</h2>
         <form onSubmit={handleSubmit}>
             <h3>Nombre</h3>

@@ -1,10 +1,7 @@
 .form{
-    
     padding-top: 5%;
     padding-bottom: 7.5%; 
     display: flex;
-    /* justify-content: flex-start; */
-    /* align-items:center ; */
     flex-wrap: wrap;
     flex-direction:column;
     border: 2px solid grey;
@@ -14,6 +11,24 @@
     margin-left: 55px;   
     margin-top: 15px;
     background-image: linear-gradient(225deg, #525153  0%, #ffffff 100%);
+    font-size: 20px;
+}
+.darkForm{
+    
+    padding-top: 5%;
+    padding-bottom: 7.5%; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    border: 1px solid white;
+    width: 400px;
+    height: 350px;
+    border-radius: 5px;
+    margin-left: 55px;   
+    margin-top: 15px;
+    background-image: linear-gradient(225deg, rgb(66, 69, 75) 0%, #000000 100%);
+    color:white;
+    font-size: 20px;
 }
 
 .grabar {
@@ -39,7 +54,13 @@
 
 @media only screen and (max-width: 500px) {
     .form{
-        width: 100%;
+        width: 98%;
         margin: 0px;
+        font-size: 14px;
+    }
+    .darkForm{
+        width: 98%;
+        margin: 0px;
+        font-size: 14px;
     }
 }
