@@ -1,10 +1,13 @@
-// function filterByCountry(country, listFiltered) {
-//   let hotelFiltered = listFiltered.filter((hotel, index) => {
-//     if (country === "todos") {
-//       return true;
-//     } else {
-//       return hotel.country.toLowerCase() === country.toLowerCase();
-//     }
-//   });
-//   return hotelFiltered;
-// }
+
+function filterByType (type, listFiltered) {
+  let serviceFiltered= listFiltered.filter((serviceData, id) => {
+    if (type === "todos") {
+      return true;
+    } else {
+      return serviceData.type.toLowerCase() === type.toLowerCase();
+    }
+  });
+  return serviceFiltered;
+}
+
+export {filterByType}
