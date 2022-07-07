@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Header darkMode={darkMode} onClick={handleClick}/>
       <Filter darkMode={darkMode} type={type} setType={setType}/>
-      <CrudApp darkMode={darkMode} type={type} setType={setType}/>
+      <CrudApp darkMode={darkMode} type={type} setType={setType} />
       <Footer darkMode={darkMode}/>
     </div>
   );
